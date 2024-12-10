@@ -1,0 +1,27 @@
+.text {
+  padding-top: 0.5rem;
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__shadow {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
