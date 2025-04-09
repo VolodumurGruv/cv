@@ -6,28 +6,17 @@
       year.
     </h3>
     <h4 class="text__bold">Experience with:</h4>
-    <ul class="summary__items">
-      <li class="summary__item">
-        <p class="text text__item">Angular / TypeScript</p>
-        <p class="text text__item">since 2020</p>
-      </li>
-      <li class="summary__item">
-        <p class="text text__item">JavaScript / HTML / CSS / SCSS</p>
-        <p class="text text__item">since 2020</p>
-      </li>
-      <li class="summary__item">
-        <p class="text text__item">Bootstrap / Material</p>
-        <p class="text text__item">since 2020</p>
-      </li>
-      <li class="summary__item">
-        <p class="text text__item">RxJS</p>
-        <p class="text text__item">since 2021</p>
-      </li>
-      <li class="summary__item">
-        <p class="text text__item">NodeJS</p>
-        <p class="text text__item">since 2021</p>
-      </li>
-    </ul>
+    <div class="data">
+      @for (item of summary; track $index) {
+
+      <div class="data__items">
+        <p class="text text__bold">{{ item.key }}</p>
+        <div class="data__item">
+          <p class="text">started at {{ item.value }}</p>
+        </div>
+      </div>
+      }
+    </div>
     <p class="text">English – upper-intermediate level.</p>
   </div>
 </div>

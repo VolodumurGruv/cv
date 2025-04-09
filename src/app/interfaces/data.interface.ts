@@ -1,6 +1,7 @@
 export interface Data {
   key: string;
   value: string | number;
+  link?: string;
 }
 
 export interface DataContact {

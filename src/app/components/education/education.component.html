@@ -1,5 +1,17 @@
 <h2 class="text__bold">Education</h2>
-<div class="education">
-  <p class="text text__bold">Bachelor of Science: Economist, 2006</p>
-  <p class="text">National University of Food Technology, Ukraine</p>
+<div class="data">
+  @for (item of education; track $index) {
+
+  <div class="data__items">
+    <p class="text text__bold">{{ item.key }}</p>
+    <div class="data__item">
+      <p class="text">
+        {{ item.value }}
+        @if (item?.link) {
+        <a href="{{ item?.link }}" target="_blank">{{ item?.link }}</a>
+        }
+      </p>
+    </div>
+  </div>
+  }
 </div>

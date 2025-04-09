@@ -11,7 +11,4 @@ import { Data } from '../../interfaces/data.interface';
 })
 export class ExperienceComponent {
   projects: Data[] = someProjects;
-  constructor() {
-    console.log(someProjects);
-  }
 }
