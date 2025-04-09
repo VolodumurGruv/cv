@@ -1,9 +1,8 @@
 .career {
   &__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     padding: 1rem 0;
@@ -13,7 +12,7 @@
     }
 
     p {
-      max-width: 352px;
+      max-width: 60%;
     }
   }
 }
