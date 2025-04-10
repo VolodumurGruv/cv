@@ -32,6 +32,7 @@ export class TabsComponent implements AfterViewInit, OnDestroy {
   tabContentContainer!: ViewContainerRef;
 
   timeoutId!: ReturnType<typeof setTimeout>;
+
   ngAfterViewInit(): void {
     this.timeoutId = setTimeout(() => this.selectTab(0), 0);
   }
