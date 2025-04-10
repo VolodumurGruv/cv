@@ -1,0 +1,25 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.2rem 0;
+  box-shadow: 4px 2px 4px 1px light-dark(#000, #3f3b3b);
+  border-radius: 22px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 0.7rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

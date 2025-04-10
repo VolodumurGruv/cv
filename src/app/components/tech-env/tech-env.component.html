@@ -1,0 +1,14 @@
+<h2 class="text__bold">Technical Environment</h2>
+<div class="data">
+  @for (item of technicalEnvironment; track $index) {
+
+  <div class="data__items">
+    <p class="text text__bold">{{ item.key }}</p>
+    <div class="data__item">
+      <p class="text">
+        {{ item.value }}
+      </p>
+    </div>
+  </div>
+  }
+</div>

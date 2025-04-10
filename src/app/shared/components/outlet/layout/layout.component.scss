@@ -1,0 +1,13 @@
+.tab__content {
+  contain: content;
+  animation: slide 1s ease;
+}
+
+@keyframes slide {
+  from {
+    transform: translate(100%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}

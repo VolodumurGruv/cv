@@ -1,0 +1,32 @@
+.table {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 20px;
+  padding: 0.6rem 0;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
+
+  &__row {
+    text-align: left;
+
+    // &:nth-child(odd) {
+    //   background: rgba(0, 0, 0, 0.15);
+
+    // }
+
+    &:last-child {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    &:first-child {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  }
+
+  &__cell {
+    max-width: 1440px;
+    padding: 1rem;
+  }
+}

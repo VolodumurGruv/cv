@@ -1,0 +1,44 @@
+<app-tabs>
+  <app-tab title="Summary" [content]="tabSummary">
+    <ng-template #tabSummary>
+      <div class="tab__content">
+        <app-summary />
+      </div>
+    </ng-template>
+  </app-tab>
+  <app-tab title="Technical Environment" [content]="tabTechEnv">
+    <ng-template #tabTechEnv>
+      <div class="tab__content">
+        <app-tech-env />
+      </div>
+    </ng-template>
+  </app-tab>
+  <app-tab title="Experience" [content]="tabExperience">
+    <ng-template #tabExperience>
+      <div class="tab__content">
+        <app-experience />
+      </div>
+    </ng-template>
+  </app-tab>
+  <app-tab title="Career" [content]="tabCareer">
+    <ng-template #tabCareer>
+      <div class="tab__content">
+        <app-career />
+      </div>
+    </ng-template>
+  </app-tab>
+  <app-tab title="Education" [content]="tabEducation">
+    <ng-template #tabEducation>
+      <div class="tab__content">
+        <app-education />
+      </div>
+    </ng-template>
+  </app-tab>
+  <app-tab title="Additional" [content]="tabAdditional">
+    <ng-template #tabAdditional>
+      <div class="tab__content">
+        <app-additional />
+      </div>
+    </ng-template>
+  </app-tab>
+</app-tabs>
